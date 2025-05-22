@@ -1,0 +1,26 @@
+# 1. আগের Git ইতিহাস মুছে ফেলো
+rm -rf .git
+
+# 2. নতুন Git ইনিশিয়াল করো
+git init
+
+# 3. লোকাল ব্রাঞ্চ তৈরি করো (git নামে)
+git checkout -b git
+
+# 4. রিমোট URL যুক্ত করো
+git remote add origin https://github.com/shubharay21/git.git 
+
+# 5. রিমোট থেকে সব ব্রাঞ্চ লোড করো
+git fetch origin
+
+# 6. রিমোটের git ব্রাঞ্চ থেকে কোড ম্যানেজ করার জন্য রিবেস করো
+git pull origin git --rebase 
+
+# 7. তোমার ফাইলগুলো অ্যাড করো
+git add .
+
+# 8. একটি কমিট করো
+git commit -m "Reconnect" 
+
+# 9. লোকাল git ব্রাঞ্চ রিমোটের সাথে পুশ করো
+git push -u origin git
